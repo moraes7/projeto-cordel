@@ -1,3 +1,4 @@
+/* ============= CSS RULES =============*/
 @charset "UTF-8";
 
 * {
@@ -8,4 +9,66 @@
 
 pre {
     white-space: pre-line;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+/* ============= HEADER =============*/
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+/* ============= SECTION =============*/
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+/* ============= SECTION / CLASS: NORMAL =============*/
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+/* ============= SECTION / CLASS: IMAGE =============*/
+section.image {
+    background-color: rgb(75, 73, 73);
+    color: white;
+}
+
+section.image pre {
+    width: 400px;
+    background-color: rgb(37, 31, 31);
+}
+
+/* ============= FOOTER =============*/
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
